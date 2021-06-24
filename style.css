@@ -1,0 +1,589 @@
+.header{
+    
+    height:148px;
+    width:100%;
+    opacity: auto;
+    position: relative;
+    background: rgb(1, 127, 255);
+    z-index: 999;
+
+}
+.middle-wrap{
+    display: flex;
+    padding: 18px 0px 8px;
+    height: auto;
+    position: relative;
+    z-index: 2;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.middle-leftcontainer{
+    display: flex;
+    flex: 1 1 0%;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.container{
+    width: 1270px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.header .logo-menu {
+    display: flex;
+    align-items: flex-start;
+    flex-basis: 248px;
+    flex-shrink: 0;
+    padding: 0px 16px 0px 0px;
+}
+.header .logo-menu img {
+    width:100px;
+    
+    margin-top: 10px;
+    margin-bottom:10px;
+    opacity:0.7;
+    position: relative;
+    padding-left: 10px;
+    display:flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    flex: 1 1 0%;
+}
+.style-wrapper {
+    cursor: pointer;
+    display: flex;
+    align-self: stretch;
+}
+.style-wrapper .menu-button {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    font-weight: 400;
+    min-height: 44px;
+}
+.style-wrapper .menu-button .hamburger-menu {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+}
+.style-wrapper .menu-button .wrap{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2px;
+}
+.style-wrapper .menu-button .wrap >span{
+    font-size: 11px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.45;
+}
+.style-wrapper .menu-button .wrap .text-icon{
+    font-size: 13px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.54;
+    display: flex;
+    align-items: flex-end;
+}
+.style-wrapper .menu-button .wrap .text-icon >img{
+    position: relative;
+    top: -1px;
+    width: 16px;
+    height: 16px;
+}
+.formsearch-root{
+    flex: 1 1 0%;
+}
+.formsearch-form{
+    width: 100%;
+    display: flex;
+    position: relative;
+    box-shadow: rgb(98 98 98 / 50%) 0px 1px 2px 0px;
+}
+.formsearch-input{
+    border: 0px;
+    padding: 0px 12px;
+    font-size: 13px;
+    border-radius: 2px 0px 0px 2px;
+    flex: 1 1 0%;
+    outline: none;
+}
+.formsearch-button{
+    cursor: pointer;
+    border: 0px;
+    width: 120px;
+    background: rgb(13, 92, 182);
+    height: 40px;
+    border-radius: 0px 2px 2px 0px;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    outline: none;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.formsearch-button .icon-search{
+    width: 20px;
+    height: 20px;
+    margin: 0px 8px 0px 0px;
+}
+.Bottom-Root{
+    position: relative;
+    z-index: 1;
+}
+.style___StyledHeaderKeyWords{
+    margin-left: 248px;
+    height: 32px;
+}
+.style___StyledHeaderKeyWords a{
+    font-size: 11px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.45;
+    letter-spacing: normal;
+    color: white;
+    margin-right: 12px;
+}
+.styles_MainGrid{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 4px;
+    overflow: hidden;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-top:25px;
+  margin-bottom: 15px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.integral .slick-track {
+    display: flex;
+}
+.hZwhBh{
+    margin-top: 16px;
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    overflow: hidden;
+    min-height: 352px;
+}
+.hZwhBh >.headers{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 16px;
+    border-bottom: 1px solid rgb(244, 244, 244);
+}
+.hZwhBh >.headers div >img{
+    height: 28px;
+}
+.hZwhBh > .header .navigation a {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 24px;
+    color: rgb(27, 168, 255);
+}
+.qZZGm {
+    color: rgb(120, 120, 120);
+    font-size: 15px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.qZZGm span {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.6;
+    margin: 0px 4px;
+    padding: 0px 3px;
+    background-color: rgb(255, 66, 78);
+    border-radius: 4px;
+    color: white;
+}
+.integral{
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+.integral.slick-track {
+    display: flex;
+}
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+.hZwhBh .deals__item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 16px;
+}
+.kttJTC {
+    padding-top: 100%;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+}
+.hQOEQo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    object-fit: contain;
+}
+
+.hZwhBh .deals__discount {
+    background-color: rgb(255, 66, 78);
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 500;
+    position: absolute;
+    z-index: 3;
+    top: 0px;
+    left: 0px;
+    border-radius: 4px 0px 26px;
+    padding: 2px 8px 4px 2px;
+}
+.hZwhBh .deals__price {
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    font-weight: 500;
+    color: rgb(36, 36, 36);
+    margin: 12px 0px 8px;
+}
+.hZwhBh .deals__qty {
+    background-color: rgb(255, 170, 175);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 20px;
+}
+.hZwhBh .deals__progress {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: rgb(255, 66, 78);
+    height: 20px;
+    border-radius: 10px;
+    min-width: 20px;
+}
+.hZwhBh .deals__qty > span {
+    font-size: 11px;
+    line-height: 16px;
+    padding: 0px 0px 0px 6px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+}
+.style_StyledIconWidgets {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    margin: 16px 0px;
+    padding: 16px 0px;
+    background: white;
+    text-align: center;
+    border-radius: 4px;
+}
+.style_StyledIconWidgets .item {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-basis: 103px;
+    flex-shrink: 0;
+}
+.style_StyledIconWidgets .item >img{
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+.style_StyledIconWidgets .item > span {
+    margin-top: 12px;
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.54;
+    color: rgb(36, 36, 36);
+    width: 81px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.style__StyledFeatureCategory {
+    background: white;
+    margin: 16px 0px 0px;
+    border-radius: 4px;
+}
+.style__StyledFeatureCategory .middle-header {
+    font-size: 20px;
+    line-height: 28px;
+    padding: 10px 16px;
+    text-transform: uppercase;
+}
+.style__StyledFeatureCategory .body {
+    margin: 10px 0px 0px;
+}
+.integral .slick-list {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.integral .slick-slide >.div {
+height:100%
+}
+.style__StyledFeatureCategory .page {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 1fr;
+    gap: 12px 8px;
+}
+.style__StyledFeatureCategory .page .item {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    color: rgb(36, 36, 36);
+}
+.style__StyledFeatureCategory .page .category-image {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.gjndCP {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
+.joKtUd {
+    padding-top: 100%;
+    position: relative;
+    background-color: rgba(27, 168, 255, 0.07);
+}
+.style__StyledFeatureCategory .page .item span {
+    text-align: center;
+    margin: 12px 0px 16px;
+    padding: 0px 12px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    font-size: 13px;
+    line-height: 20px;
+}
+.integrate {
+    background: white;
+    margin: 16px 0px 0px;
+    border-radius: 4px;
+    padding: 10px 16px 16px;
+}
+.integrate .headerss {
+    font-size: 20px;
+    line-height: 28px;
+    padding: 10px 0px;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    cursor: default;
+    text-transform: uppercase;
+}
+.integrate .headerss > span {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+.integrate .headerss .left img {
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+}
+.integrate .header .right {
+    font-size: 15px;
+    line-height: 24px;
+    color: rgb(13, 92, 182);
+    cursor: pointer;
+}
+.integrate .header .right img {
+    margin-right: 4px;
+    width: 20px;
+    height: 20px;
+}
+.integrate .body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    gap: 0px 16px;
+}
+.integrate .body .item {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    color: rgb(36, 36, 36);
+    border-radius: 8px;
+    border: 1px solid rgb(238, 238, 238);
+    overflow: hidden;
+}
+.integrate .body .item .picture-group {
+    display: flex;
+    padding: 8px;
+    width: 100%;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.integrate .body .item .content {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 12px;
+    align-self: flex-start;
+    width: 100%;
+    flex: 1 1 0%;
+}
+.integrate .body .item .content .title {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.6;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.integrate .body .item .content .sub-title {
+    font-size: 13px;
+    line-height: 1.54;
+    color: rgb(120, 120, 120);
+}
+.integrate .body .item:nth-child(1) .content {
+    background-color: rgb(255, 241, 241);
+}
+.integrate .body .item:nth-child(2) .content {
+    background-color: rgb(211, 238, 255);
+}
