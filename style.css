@@ -690,6 +690,17 @@ display: flex;
         border: 1px solid transparent;
         cursor: pointer;
     }
+    
+    .fluctuate .badge-service {
+        margin-bottom: 8px;
+        margin-top: 12px;
+    }
+    .fluctuate .name {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+    }
     .fluctuate {
         display: flex;
         padding: 12px 16px;
@@ -705,6 +716,35 @@ display: flex;
         height: 200px;
         margin: 0px 12px;
         text-align: center;
+    }
+    .fluctuate .name > span {
+        font-size: 13px;
+        font-weight: 400;
+        margin: 0px 0px 4px;
+        line-height: 20px;
+        word-break: break-word;
+    }
+    .fluctuate .price-discount {
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        margin-top: 4px;
+    }
+    .fluctuate .price-discount__price {
+        font-size: 15px;
+        line-height: 24px;
+        font-weight: 500;
+        margin: 0px 8px 0px 0px;
+    }
+    .fluctuate .price-discount__discount {
+        font-size: 13px;
+        line-height: 20px;
+        border-radius: 2px;
+        background: rgb(255, 66, 78);
+        color: white;
+        padding: 0px 2px;
+        
+
     }
 .content-guidance {
     width: 100%;
